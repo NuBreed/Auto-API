@@ -1,0 +1,48 @@
+[
+  {
+    "id": 1,
+    "Brand": "Toyota",
+    "model": "Jeep",
+    "Price": "$2000",
+    "TUV": "Bis 2024",
+    "Fuel": "Benzin",
+    "Image": "https://images.pexels.com/photos/1149056/pexels-photo-1149056.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+  },
+  {
+    "id": 2,
+    "Brand": "Benz",
+    "model": "AMG S63",
+    "Price": "$4600",
+    "TUV": "Bis 2024",
+    "Fuel": "Diesel",
+    "Image": "https://images.pexels.com/photos/136872/pexels-photo-136872.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+  },
+  {
+    "id": 3,
+    "Brand": "Benz",
+    "model": "AMG S63",
+    "Price": "$4600",
+    "TUV": "Bis 2024",
+    "Fuel": "Diesel",
+    "Image": "https://images.pexels.com/photos/136872/pexels-photo-136872.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+  },
+  {
+    "id": 4,
+
+    "Brand": "Benz",
+    "model": "AMG S63",
+    "Price": "$4600",
+    "TUV": "Bis 2024",
+    "Fuel": "Diesel",
+    "Image": "https://images.pexels.com/photos/136872/pexels-photo-136872.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+  },
+  {
+    "id": 5,
+    "Brand": "Benz",
+    "model": "AMG S63",
+    "Price": "$4600",
+    "TUV": "Bis 2024",
+    "Fuel": "Diesel",
+    "Image": "https://images.pexels.com/photos/136872/pexels-photo-136872.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+  }
+]

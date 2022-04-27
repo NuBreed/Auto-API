@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../public/style.css" />
+    <title>Carly</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1>Carly</h1>
+      <span></span>
+    </header>
+    <main class="wrapper">
+      <div class="search-control">
+        <label for="">Choose your brand:</label>
+        <input type="text" />
+      </div>
+      <section class="container"></section>
+    </main>
+
+    <script>
+      window.addEventListener('load', () => {
+        const cartBtns = document.querySelectorAll('.cart-btn')
+        cartBtns.forEach((cartBtn) =>
+          cartBtn.addEventListener('click', (e) => {
+            console.log(e.target.dataset.id)
+          })
+        )
+      })
+      const response = async () => {
+        let res = await fetch('http://localhost:5000/')
+        return await res.json()
+      }
+      async function renderCars() {
+        let cars = await response()
+
+        let vehicles = cars
+          .map((car) => {
+            return `
+                <article class="cars-card" >
+          <h4>${car.Brand} ${car.model}</h4>
+          <img src="${car.Image}"/>
+          <p>${car.Fuel}</p>
+          <p>${car.Price}</p>
+          <button class="btn cart-btn" data-id="${car.id}">AddToCard</button>
+           </article>`
+          })
+          .join('')
+
+        let container = document.querySelector('.container')
+        container.innerHTML = vehicles
+      }
+      renderCars()
+    </script>
+  </body>
+</html>
